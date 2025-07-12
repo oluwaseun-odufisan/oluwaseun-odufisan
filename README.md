@@ -52,9 +52,9 @@ A responsive dashboard for managing users, products, and analytics with real-tim
 ---
 
 ## Past Projects
-- **Intelligent Payment Routing System **: Designed an AI-powered system to optimize payment processor selection based on cost, latency, and success rate, achieving 15% cost savings.  
-- **Virtual Account & Temporary Payment Solution **: Developed a system for generating temporary accounts with real-time WebSocket updates, enabling smooth payment flows.  
-- **Predictive Analytics for Payment Failures **: Built an ML model using RNNs and transformers to predict transaction failures with 92% accuracy, reducing failed transactions by 20%.  
+- **Intelligent Payment Routing System**: Designed an AI-powered system to optimize payment processor selection based on cost, latency, and success rate, achieving 15% cost savings.  
+- **Virtual Account & Temporary Payment Solution**: Developed a system for generating temporary accounts with real-time WebSocket updates, enabling smooth payment flows.  
+- **Predictive Analytics for Payment Failures**: Built an ML model using RNNs and transformers to predict transaction failures with 92% accuracy, reducing failed transactions by 20%.  
 - **Fraud Detection System **: Implemented a Random Forest-based system with explainable AI for real-time transaction monitoring, improving fraud detection by 30%.
 
 ---

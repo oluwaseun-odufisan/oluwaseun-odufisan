@@ -33,20 +33,27 @@ I am Oluwaseun Isaac Odufisan, a full stack software engineer and creative techn
 
 ## Featured Projects
 
-### [AI-Powered Task Management Application](https://github.com/oluwaseun-odufisan/NEGTM)
-A web-based productivity platform with AI-assisted scheduling, real-time chat, and distributed file storage for efficient team management. I built the entire stack, from the React frontend with Tailwind CSS to the Node.js backend with MongoDB and WebSocket integration.    
-**Tech**: React, TailwindCSS, Node.js, MongoDB, Express.js, WebSocket, Firebase  
-[Task Management Demo](https://negaitm.vercel.app) 
+### [Lejar: Personal Finance for Nigeria and Nigerians](https://github.com/oluwaseun-odufisan/lejar)
+A user-centric financial management app for Nigerians, offering AI-powered receipt scanning, real-time transaction tracking, and budget planning in Naira. Built with Next.js, Prisma, and Resend for email notifications, it ensures accessibility and scalability.  
+**Tech**: Next.js, Prisma, Resend, Tailwind CSS  
+[Live Demo](https://lejar.vercel.app)
 
+### [AI-Powered Task Management Application](https://github.com/oluwaseun-odufisan/NEGTM)
+A web-based productivity platform with AI-assisted scheduling, real-time chat, social feed, and distributed file storage. Built with React, Node.js, and MongoDB, it offers predictive analytics and seamless Outlook integration.  
+**Tech**: Noode.js, React, Tailwind CSS, MongoDB, Express.js, WebSocket, Firebase  
+[Live Demo](https://negaitm.vercel.app)
 
 ### [NEG AI Banking Platform](https://github.com/oluwaseun-odufisan/NEGAIBANKING)
-A secure digital banking solution for Nigeria with real-time transfers, bill payments, Flutterwave integration, and JWT authentication. I developed the full system, including the Node.js/Express backend, MongoDB database, and secure API integrations. 
-**Tech**: Node.js, Express.js, MongoDB, Flutterwave API, JWT  
+A secure digital banking solution for Nigeria with real-time transfers, bill payments, and Flutterwave integration. Built with Node.js, Express, and MongoDB, it features JWT authentication and webhook support.  
+**Tech**: Node.js, Express.js, MongoDB, Flutterwave API, JWT
 
+### [Cointomic Crypto Portfolio Manager](https://github.com/oluwaseun-odufisan/Cointomic)
+A cross-platform fintech app for cryptocurrency management with real-time CoinMarketCap API integration and a neumorphic UI. Built with React Native and Expo, it supports secure portfolio tracking and EUR/NGN conversions.  
+**Tech**: React Native, Expo, CoinMarketCap API, Clerk, Drizzle ORM
 
-### [MERN Admin Dashboard](https://github.com/oluwaseun-odufisan/merndashboard)
-A responsive dashboard for managing users, products, and analytics with real-time data visualization and Tailwind CSS styling. I architected and implemented the entire MERN stack
-**Tech**: MongoDB, Express.js, React, Node.js, Tailwind CSS  
+### [CarbuCarbu Ride-Sharing App](https://github.com/oluwaseun-odufisan/CarbuCarbu)
+A mobile-first ride-sharing app with real-time ride booking, Google Maps integration, and Stripe payments. Built with React Native and Expo, it offers secure authentication and scalable serverless APIs.  
+**Tech**: React Native, Expo, Clerk, Google Maps API, Stripe, Neon
 
 
 ---
@@ -61,7 +68,7 @@ A responsive dashboard for managing users, products, and analytics with real-tim
 
 ## Current Projects
 - **KYC Engine**: Developing an ML-based KYC solution with face recognition, liveness detection, and OCR for document verification, enhancing compliance efficiency.  
-- **Zaviton**: A React Native app modernizing group savings with with swarm intelligence and payment tracking..  
+- **Zaviton**: A React Native app modernizing group savings with swarm intelligence and payment tracking..  
 - **VAFA**: A voice-activated financial management app supporting Nigerian dialects, leveraging NLP and React Native for accessibility in rural communities.  
 - **AurumJuvat**: A gamified financial literacy app integrating real transaction data into interactive challenges to promote financial education.
 

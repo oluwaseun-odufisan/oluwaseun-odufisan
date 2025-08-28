@@ -10,7 +10,7 @@ body {
     background-color: #FFFFFF;
     color: #4E342E;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: clamp(14px, 4vw, 16px);
     scroll-behavior: smooth;
 }
 
@@ -31,51 +31,10 @@ a:hover {
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
+    width: 90%;
     margin: 0 auto;
     padding: 0 1rem;
-}
-
-/* Navigation */
-nav {
-    background-color: #FFFFFF;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(78, 52, 46, 0.1);
-}
-
-.nav-toggle {
-    display: none;
-    font-size: 1.5rem;
-    color: #4E342E;
-    cursor: pointer;
-    padding: 1rem;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem 0;
-}
-
-.nav-menu li {
-    margin: 0 1rem;
-}
-
-.nav-menu li a {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #4E342E;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.nav-menu li a:hover {
-    color: #F4511E;
 }
 
 /* Hero Section */
@@ -99,17 +58,19 @@ nav {
     background: url('https://source.unsplash.com/random/1920x1080/?ai,research') no-repeat center center/cover;
     opacity: 0.15;
     z-index: -1;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 1rem;
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
     color: #FFFFFF;
     margin-bottom: 1.5rem;
 }
@@ -128,7 +89,7 @@ nav {
     color: #FFFFFF;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: clamp(1rem, 3vw, 1.1rem);
     box-shadow: 0 4px 15px rgba(78, 52, 46, 0.3);
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
@@ -150,13 +111,54 @@ nav {
     color: #F4511E;
 }
 
+/* Navigation */
+nav {
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(78, 52, 46, 0.1);
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #4E342E;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.nav-menu li {
+    margin: 0 1.5rem;
+}
+
+.nav-menu li a {
+    font-weight: 600;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    color: #4E342E;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-menu li a:hover {
+    color: #F4511E;
+}
+
 /* Section Styles */
 section {
-    padding: 4rem 0;
+    padding: clamp(4rem, 10vw, 6rem) 0;
 }
 
 section h2 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 6vw, 3rem);
     text-align: center;
     margin-bottom: 2rem;
     position: relative;
@@ -166,27 +168,27 @@ section h2::after {
     content: '';
     display: block;
     width: 80px;
-    height: 4px;
+    height: 3px;
     background-color: #F4511E;
-    margin: 0.5rem auto;
+    margin: 0.8rem auto;
 }
 
 section h3 {
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
     margin-bottom: 0.8rem;
 }
 
 section p {
-    font-size: 1rem;
+    font-size: clamp(1rem, 3vw, 1.1rem);
     color: #4E342E;
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 /* About Section */
 .about-content {
     text-align: center;
-    padding: 2rem 0;
+    padding: clamp(2rem, 5vw, 4rem);
 }
 
 /* Research Achievements Section */
@@ -195,7 +197,7 @@ section p {
 }
 
 .research-timeline {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -221,25 +223,20 @@ section p {
 }
 
 .interests-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .interest-item {
     margin: 1.5rem 0;
     padding-left: 1rem;
-    border-left: 4px solid #F4511E;
+    border-left: 3px solid #F4511E;
     transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
 
 .interest-item:hover {
     background-color: #FFF3E0;
     padding-left: 1.5rem;
-}
-
-.interest-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
 }
 
 /* Projects Section */
@@ -251,12 +248,10 @@ section p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    justify-items: center;
+    justify-content: center;
 }
 
 .project-item {
-    width: 100%;
-    max-width: 400px;
     padding: 1.5rem;
     background-color: #F9F9F9;
     border-radius: 8px;
@@ -274,7 +269,7 @@ section p {
 }
 
 .journey-timeline {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -290,7 +285,7 @@ section p {
 }
 
 .contact-section p {
-    font-size: 1.1rem;
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
     margin-bottom: 1.5rem;
 }
 
@@ -298,11 +293,11 @@ section p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .social-links a {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 3vw, 1.2rem);
     font-weight: 600;
     color: #FFFFFF;
 }
@@ -321,7 +316,14 @@ footer {
     text-align: center;
     padding: 2rem 0;
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .footer-links {
@@ -329,12 +331,11 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 1rem;
 }
 
 .footer-links a {
     color: #F4511E;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
     font-weight: 600;
 }
 
@@ -343,30 +344,19 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+    }
+
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: clamp(2rem, 6vw, 3rem);
     }
 
     .hero-content p {
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 3vw, 1.3rem);
     }
 
-    section h2 {
-        font-size: 2rem;
-    }
-
-    section h3 {
-        font-size: 1.5rem;
-    }
-
-    .cta-button {
-        padding: 0.7rem 1.5rem;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 768px) {
     .nav-toggle {
         display: block;
     }
@@ -374,13 +364,14 @@ footer {
     .nav-menu {
         display: none;
         flex-direction: column;
-        background-color: #FFFFFF;
+        align-items: center;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 10px rgba(78, 52, 46, 0.2);
         padding: 1rem 0;
-        box-shadow: 0 2px 10px rgba(78, 52, 46, 0.1);
     }
 
     .nav-menu.active {
@@ -388,24 +379,24 @@ footer {
     }
 
     .nav-menu li {
-        margin: 0.5rem 0;
+        margin: 0.8rem 0;
     }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
+    section h2 {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
     }
 
-    .hero-content p {
-        font-size: 1.1rem;
+    section h3 {
+        font-size: clamp(1.3rem, 4vw, 1.6rem);
     }
 
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: clamp(0.9rem, 3vw, 1rem);
     }
 
     .about-content {
-        padding: 1.5rem 0;
+        padding: clamp(1.5rem, 4vw, 2rem);
     }
 
     .project-carousel {
@@ -419,80 +410,30 @@ footer {
 }
 
 @media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
     .hero {
-        min-height: 80vh;
+        min-height: 70vh;
     }
 
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
     }
 
     .hero-content p {
-        font-size: 1rem;
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
     }
 
-    .cta-button {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.85rem;
-    }
-
-    section {
-        padding: 2rem 0;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-    }
-
-    section h3 {
-        font-size: 1.3rem;
-    }
-
-    section p {
-        font-size: 0.9rem;
-    }
-
-    .project-item {
-        padding: 1rem;
-    }
-
-    .social-links a {
-        font-size: 1rem;
+    .cta-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
     }
 
     .footer-links {
         flex-direction: column;
         gap: 0.8rem;
     }
-}
 
-@media (max-width: 360px) {
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero-content p {
-        font-size: 0.9rem;
-    }
-
-    .cta-button {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    section h3 {
-        font-size: 1.2rem;
-    }
-
-    .container {
-        padding: 0 0.8rem;
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
     }
 }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Oluwaseun Isaac Odufisan - AI Research Innovator</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -29,7 +29,10 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
@@ -124,7 +127,7 @@
                 </div>
                 <div class="interest-item" data-aos="fade-up" data-aos-delay="700">
                     <h3>Responsible AI</h3>
-                    <p>AI needs to be fair and transparent to truly serve people. Efforts to reduce bias and set ethical standards are gaining momentum. It helps prevents biased diagnostics in healthcare.  I want to help shape global guidelines for responsible AI, ensuring it supports equitable systems in areas like farming and public policy.</p>
+                    <p>AI needs to be fair and transparent to truly serve people. Efforts to reduce bias and set ethical standards are gaining momentum. It helps prevents biased diagnostics in healthcare. I want to help shape global guidelines for responsible AI, ensuring it supports equitable systems in areas like farming and public policy.</p>
                 </div>
             </div>
         </div>
@@ -269,6 +272,11 @@
             duration: 1000,
             once: true,
             easing: 'ease-in-out'
+        });
+
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('active');
         });
     </script>
 </body>

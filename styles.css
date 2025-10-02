@@ -20,13 +20,13 @@ h1, h2, h3 {
 }
 
 a {
-    color: #F4511E;
+    color: #FF6200;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
-    color: #D84315;
+    color: #C65A20;
     transform: scale(1.05);
 }
 
@@ -44,7 +44,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #F4511E;
+    background-color: #db6c27;
     position: relative;
     overflow: hidden;
 }
@@ -91,24 +91,29 @@ a:hover {
     font-weight: 600;
     font-size: clamp(1rem, 3vw, 1.1rem);
     box-shadow: 0 4px 15px rgba(78, 52, 46, 0.3);
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #D84315;
+    background-color: #C65A20;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(78, 52, 46, 0.4);
 }
 
 .cta-button.secondary {
     background-color: transparent;
-    border: 2px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
     color: #FFFFFF;
+    padding: 0.9rem 2.2rem;
+    font-size: clamp(1.1rem, 3.2vw, 1.2rem);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-button.secondary:hover {
-    background-color: #FFFFFF;
-    color: #F4511E;
+    background-color: #4E342E;
+    color: #FFFFFF;
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(78, 52, 46, 0.3);
 }
 
 /* Navigation */
@@ -149,7 +154,7 @@ nav {
 }
 
 .nav-menu li a:hover {
-    color: #F4511E;
+    color: #FF6200;
 }
 
 /* Section Styles */
@@ -169,7 +174,7 @@ section h2::after {
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #F4511E;
+    background-color: #FF6200;
     margin: 0.8rem auto;
 }
 
@@ -214,7 +219,7 @@ section p {
     top: 0;
     width: 8px;
     height: 100%;
-    background-color: #F4511E;
+    background-color: #FF6200;
 }
 
 /* Research Interests Section */
@@ -230,7 +235,7 @@ section p {
 .interest-item {
     margin: 1.5rem 0;
     padding-left: 1rem;
-    border-left: 3px solid #F4511E;
+    border-left: 3px solid #FF6200;
     transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
 
@@ -274,7 +279,7 @@ section p {
 }
 
 .journey-timeline .timeline-item::before {
-    background-color: #F4511E;
+    background-color: #FF6200;
 }
 
 /* Contact Section */
@@ -303,7 +308,7 @@ section p {
 }
 
 .social-links a:hover {
-    color: #F4511E;
+    color: #FF6200;
 }
 
 .social-links i {
@@ -334,7 +339,7 @@ footer .container {
 }
 
 .footer-links a {
-    color: #F4511E;
+    color: #FF6200;
     font-size: clamp(0.9rem, 2.5vw, 1rem);
     font-weight: 600;
 }
